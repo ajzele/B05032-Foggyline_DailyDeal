@@ -27,11 +27,10 @@ class InstallData implements \Magento\Framework\Setup\InstallDataInterface
             'minimal_price',
             'cost',
             'tier_price',
-            'group_price',
             'weight',
         ];
 
-        // make these attributes applicable to foggylinedailydeal products
+        // make these attributes applicable to foggyline_dailydeal products
         foreach ($fieldList as $field) {
             $applyTo = explode(
                 ',',
